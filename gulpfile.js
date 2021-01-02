@@ -15,7 +15,7 @@ gulp.task('css', function () {
       cascade: false
     }),
     cssDeclarationSorter({
-      order: 'smacss'
+      order: 'concentric-css'
     }),
     mqpacker(),
     cssnano({ autoprefixer: false })
