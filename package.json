@@ -1,0 +1,24 @@
+{
+  "name": "itsuki-no-miya",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KarasuTatehi/itsuki-no-miya.git",
+  "author": "KarasuTatehi <45784893+KarasuTatehi@users.noreply.github.com>",
+  "license": "CC-BY-SA-3.0",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "css-declaration-sorter": "^6.0.2",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss-reporter": "^7.0.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-airbnb": "^0.0.0"
+  },
+  "scripts": {
+    "build": "gulp css"
+  }
+}
