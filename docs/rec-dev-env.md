@@ -1,4 +1,4 @@
-# 開発環境
+# 推奨開発環境
 
 [gulp.js](https://gulpjs.com/) を利用して、 [Sass](https://sass-lang.com/) + [PostCSS](https://postcss.org/) で開発する。
 
