@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "repository": "https://github.com/KarasuTatehi/itsuki-no-miya.git",
   "author": "KarasuTatehi <45784893+KarasuTatehi@users.noreply.github.com>",
-  "license": "CC-BY-SA-3.0",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "parcel": "^2.0.0-nightly.506",
