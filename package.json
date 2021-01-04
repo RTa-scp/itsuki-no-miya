@@ -1,16 +1,12 @@
 {
   "name": "itsuki-no-miya",
   "version": "0.0.0",
-  "main": "index.js",
   "repository": "https://github.com/KarasuTatehi/itsuki-no-miya.git",
   "author": "KarasuTatehi <45784893+KarasuTatehi@users.noreply.github.com>",
   "license": "CC-BY-SA-3.0",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "9.8.6",
-    "parcel": "^1.12.4",
-    "postcss": "^8.2.2",
-    "sass": "^1.32.0"
+    "parcel": "^2.0.0-nightly.506"
   },
   "scripts": {
     "build": "parcel build src/bundle.scss",
