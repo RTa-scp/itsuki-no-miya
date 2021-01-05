@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "parcel build src/bundle.sass",
+    "test": "parcel mock.pug",
     "watch": "parcel watch src/bundle.sass"
   }
 }
