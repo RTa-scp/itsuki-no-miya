@@ -22,7 +22,12 @@
       grow: 1;
       shrink: 1;
     };
-    padding: $SPACING_UNIT;
+    padding: {
+      top: $SPACING_UNIT;
+      left: $SPACING_UNIT;
+      right: $SPACING_UNIT;
+      bottom: $SPACING_UNIT;
+    };
 
     @mixin size($device) {
 
@@ -47,7 +52,7 @@
     @include size($device: null);
 
     // Mobile only
-    @include screen($min: $MOBILE, $max: $TABLET - 1) {
+    @include max-screen($max: $TABLET - 1) {
       @include size($device: --MobileOnly);
     };
 
@@ -84,6 +89,76 @@
     // Full HD
     @include min-screen($min: $FULL_HD) {
       @include size($device: --FullHD);
+    };
+
+  }
+
+  &.is-Gap {
+
+    @mixin gap($device) {
+
+      @for $var from 0 to 9 {
+
+        &--#{$var}#{$device} {
+          margin: {
+            left: - 2 / 8 * $var + rem;
+            right: - 2 / 8 * $var + rem;
+          };
+
+          >.l-Col {
+            padding: {
+              left: 2 / 8 * $var + rem;
+              right: 2 / 8 * $var + rem;
+            };
+          }
+
+        }
+
+      }
+
+    }
+
+    // Mobile (is All)
+    @include gap($device: null);
+
+    // Mobile only
+    @include max-screen($max: $TABLET - 1) {
+      @include gap($device: --MobileOnly);
+    };
+
+    // Tablet
+    @include min-screen($min: $TABLET) {
+      @include gap($device: --Tablet);
+    };
+
+    // Tablet only
+    @include screen($min: $TABLET, $max: $DESKTOP - 1) {
+      @include gap($device: --TabletOnly);
+    };
+
+    // Desktop
+    @include min-screen($min: $DESKTOP) {
+      @include gap($device: --Desktop);
+    };
+
+    // Desktop only
+    @include screen($min: $DESKTOP, $max: $WIDESCREEN - 1) {
+      @include gap($device: --DesktopOnly);
+    };
+
+    // Widescreen
+    @include min-screen($min: $WIDESCREEN) {
+      @include gap($device: --Widescreen);
+    };
+
+    // Widescreen only
+    @include screen($min: $WIDESCREEN, $max: $FULL_HD - 1) {
+      @include gap($device: --WidescreenOnly);
+    };
+
+    // Full HD
+    @include min-screen($min: $FULL_HD) {
+      @include gap($device: --FullHD);
     };
 
   }
