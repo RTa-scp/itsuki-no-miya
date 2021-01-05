@@ -44,12 +44,12 @@
     &.is-Span--#{$i}
 
       @include min-screen($min: $TABLET)
-        flex: none
         width: floor(100 / 12 * $i) + #{'%'}
+        flex: none
 
       @include media
-        flex: none
         width: floor(100 / 12 * $i) + #{'%'}
+        flex: none
 
     &.is-Offset--#{$i}
 
