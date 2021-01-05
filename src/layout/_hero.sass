@@ -1,0 +1,20 @@
+.l-Hero
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: stretch
+
+  &__Head,
+  &__Body,
+  &__Foot
+    flex-grow: 0
+    flex-shrink: 0
+
+  &__Body
+    display: flex
+    padding: 3rem 1.5rem
+    align-items: center
+
+    >.l-Container
+      flex: 1 1 0
+
