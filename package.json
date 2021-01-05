@@ -10,7 +10,7 @@
     "sass": "^1.32.0"
   },
   "scripts": {
-    "build": "parcel build src/bundle.scss",
-    "watch": "parcel watch src/bundle.scss"
+    "build": "parcel build src/bundle.sass",
+    "watch": "parcel watch src/bundle.sass"
   }
 }
