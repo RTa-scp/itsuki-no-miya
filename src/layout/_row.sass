@@ -1,0 +1,52 @@
+
+.l-Row
+  display: block
+  margin: -.75rem
+
+  :not(:last-child)
+    margin-bottom: 1.5 - .75 + rem
+
+  @include min-screen($min: $TABLET)
+    display: flex
+
+  @include isMedia
+    display: flex
+
+  @for $i from 0 through 8
+    &.is-Gap--#{$i}
+      margin: - 2 / 8 * $i + rem
+
+      >.l-Col
+        padding: 2 / 8 * $i + rem
+
+      @include media
+        margin: - 2 / 8 * $i + rem
+
+        >.l-Col
+          padding: 2 / 8 * $i + rem
+
+.l-Col
+  display: block
+  padding: .75rem
+
+  @include min-screen($min: $TABLET)
+    flex: 1 1 0
+
+  @for $i from 1 through 12
+    &.is-Span--#{$i}
+
+      @include min-screen($min: $TABLET)
+        flex: none
+        width: floor(100 / 12 * $i) + #{'%'}
+
+      @include media
+        flex: none
+        width: floor(100 / 12 * $i) + #{'%'}
+
+    &.is-Offset--#{$i}
+
+      @include min-screen($min: $TABLET)
+        margin-left: floor(100 / 12 * $i) + #{'%'}
+
+      @include media
+        margin-left: floor(100 / 12 * $i) + #{'%'}
