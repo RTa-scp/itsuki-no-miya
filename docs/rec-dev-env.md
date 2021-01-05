@@ -1,6 +1,6 @@
 # 推奨開発環境
 
-[gulp.js](https://gulpjs.com/) を利用して、 [Sass](https://sass-lang.com/) + [PostCSS](https://postcss.org/) で開発する。
+[Parcel](https://ja.parceljs.org/) を利用して、 [Sass](https://sass-lang.com/) で開発する。
 
 ソースコードは `.sass` よりも `.scss` を推奨する。
 
