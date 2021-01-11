@@ -11,8 +11,8 @@
     "sass": "^1.32.0"
   },
   "scripts": {
-    "build": "parcel build src/bundle.sass",
-    "test": "parcel mock.pug",
-    "watch": "parcel watch src/bundle.sass"
+    "build": "parcel build src/mock.pug",
+    "test": "parcel src/mock.pug",
+    "watch": "parcel watch src/mock.pug"
   }
 }
