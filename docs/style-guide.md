@@ -139,39 +139,12 @@ HTMLのマークアップが間違っているとスタイルのオーバーラ�
 ### Concentric CSS
 
 スタイルの実装順序に規則性に重きをおいた、CSSの設計手法。
+CSS3版は[こちら](https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style3.css)。
 
-```scss
-{
-  display: ;
-  position: ;
-  float: ;
-  clear: ;
-
-  visibility: ;
-  opacity: ;
-  z-index: ;
-
-  margin: ;
-  outline: ;
-  border: ;
-  background: ;
-  padding: ;
-
-  width: ;
-  height: ;
-  overflow: ;
-
-  color: ;
-  text: ;
-  font: ;
-}
-```
-
-レイアウト・デザインの外側から内側へとスタイルを記述するため、
-可読性に優れている。
-しかしプロパティの仕様をよく理解していなければならない上に、
+要素の外側から内側へとスタイルを記述するため可読性に優れている。
+しかしプロパティの仕様をよく理解していなければならない上、
 理解していてもヒューマンエラーが発生しやすい。
-`css-declaration-sorter` などの自動整形ツールの使用を推奨する。
+自動整形ツールの使用を推奨する。
 
 ### FLOCSS
 
@@ -180,21 +153,21 @@ HTMLのマークアップが間違っているとスタイルのオーバーラ�
 MindBEMdingなど、複数のオブジェクト指向なCSS設計手法の影響を受けており、
 それらを統合してディレクトリの構築を素早く行うために利用するのが好ましい。
 
-- `foundation` - 基礎レイヤー
-  - `variable` - 変数
-  - `function` - 独自関数
-  - `mixin` - Mixin関数
-  - `vendor` - 外部ライブラリ
-  - `vendor-extension` - 外部ライブラリのオーバーライド
-  - `base` - 最小スタイル
-- `layout` - レイアウトレイヤー
-- `object` - モジュールレイヤー
+- `foundation`
+  - `variable` - グローバル変数
+  - `function` - グローバル独自関数
+  - `mixin` - グローバルMixin
+  - `vendor` - 外部ライブラリ、フレームワーク
+  - `vendor-extension` - `vendor`のオーバーライド
+  - `base` - 要素セレクタレベルのフレームワーク（サニタイズCSS）
+- `layout`
+- `object`
   - `component` - 汎用モジュール
-  - `project` - ハブモジュール
-  - `theme` - カラースキームモジュール
-  - `scope` - コンテンツモジュール
-  - `utility` - 調整モジュール
-  - `qa` / `test` - 品質保証・試験モジュール
+  - `project` - プロジェクトモジュール
+  - `theme` - テーマモジュール
+  - `scope` - スコープモジュール
+  - `utility` - ヘルパーモジュール
+- `qa` / `test`
 
 多くのディレクトリに分割することで参照性・拡張性に優れている分、
 プロジェクト全体のサイズは大きくなりがちである。
