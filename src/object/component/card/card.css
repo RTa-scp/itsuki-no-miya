@@ -1,0 +1,76 @@
+/*====== body ======*/
+
+.card {
+  background-color: {$bg-color};
+  border-radius: .25rem;
+  color: {$content-color};
+  max-width: 100%;
+  width: {$width};
+  position: relative;
+}
+.card__image {
+  width: {$width};
+}
+.card__content {
+  background-color: transparent;
+  padding: 1.5rem;
+}
+.card__content:last-child {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+/*====== media ======*/
+
+.media {
+  align-items: flex-start;
+  display: flex;
+  text-align: inherit;
+}
+.card .media:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.media--left, .media--right {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.media--left {
+  margin-right: 1rem;
+}
+.image.is-48x48 {
+  height: 48px;
+  width: 48px;
+}
+.media__content {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: inherit;
+}
+/*====== card-content ======*/
+
+.card p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.card .title {
+  color: {$title-color};
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+.title.is-4 {
+  font-size: 1.5rem;
+}
+.subtitle {
+  color: {$subtitle-color};
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.subtitle.is-6 {
+  font-size: 1rem;
+}
+.title:not(.is-spaced)+.subtitle {
+  margin-top: -1.25rem;
+}
