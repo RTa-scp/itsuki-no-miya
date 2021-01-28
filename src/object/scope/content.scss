@@ -1,5 +1,13 @@
 .s-Content {
 
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+
+    margin-bottom: 0;
+
+  }
+
   @each $headLevel, $fontSize in (
 
     "1": 42,
