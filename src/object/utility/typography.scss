@@ -1,0 +1,48 @@
+.u-Text {
+
+  @each $nameSpace, $fontSize in (
+
+    "--1": 42,
+    "--2": 35,
+    "--3": 29,
+    "--4": 24,
+    "--5": 19,
+    "--6": 16
+
+  ) {
+
+    &.is-Size#{$nameSpace} {
+
+      font-size: $fontSize / 16 + em;
+
+    }
+
+  }
+
+  @each $nameSpace, $align in (
+
+    "Left": left,
+    "Center": center,
+    "Right": right
+
+  ) {
+
+    &.is-#{$nameSpace} {
+
+      text-align: $align;
+
+    }
+
+  }
+
+  @each $var in list {
+
+    &.is-Vertical {
+
+      writing-mode: vertical-rl;
+
+    }
+
+  }
+
+}
