@@ -3,7 +3,6 @@
 [Parcel](https://ja.parceljs.org/) を利用して、 [Sass](https://sass-lang.com/) で開発する。
 
 ソースコードは `.sass` よりも `.scss` を推奨する。
-（…と言っておきながら、私は `.sass` で書いてます）
 
 ## 目次
 
@@ -35,6 +34,6 @@ npm run build
 
 テストスクリプトを実行
 ```
-npm run test
+npm run serve
 ```
 [ローカル](http://localhost:1234/)にライブサーバーが立ち上がる
