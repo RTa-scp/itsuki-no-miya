@@ -1,0 +1,29 @@
+body {
+
+  line-height: 1.5;
+  color: #fff;
+  font: {
+    family: "Noto Serif JP", serif;
+    size: 1rem;
+    weight: 400;
+  };
+
+  @include min-screen($min: 1024px) {
+
+    font-size: 18 / 16 + rem;
+
+  }
+
+}
+
+strong {
+
+  font-weight: 700;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: 500;
+
+}
