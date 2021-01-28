@@ -1,0 +1,36 @@
+.c-Card {
+
+  margin-bottom: 1.5rem;
+  border: {
+    left: {
+      width: 4px;
+      style: solid;
+      color: #e6b422;
+    };
+  };
+  background-color: #030106;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__Head,
+  &__Foot,
+  &__Body {
+
+    padding: {
+      top: .75rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      bottom: .75rem;
+    };
+
+  }
+
+  &__Image {
+
+    margin-left: -4px;
+
+  }
+
+}
