@@ -1,0 +1,116 @@
+body {
+
+  background: {
+    color: #000;
+    image: url("/assets/img/body.background-image.png");
+    position: {
+      x: 50%;
+      y: 0;
+    };
+    repeat: repeat;
+  };
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  margin: {
+    top: 0;
+    bottom: 1.5rem;
+  };
+  font-size: 1em;
+
+}
+
+p {
+
+  margin: {
+    top: 0;
+    bottom: 1.5rem;
+  };
+
+}
+
+hr {
+
+  margin: {
+    top: 0;
+    bottom: 1.5rem;
+  };
+  border: {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: {
+      width: 1px;
+      style: solid;
+      color: #fff;
+    };
+  };
+
+}
+
+ol,
+ul {
+
+  margin: {
+    top: 0;
+    bottom: 1.5rem;
+  };
+  padding-left: 1.75rem;
+
+}
+
+li {
+
+  margin-bottom: .25rem;
+
+}
+
+dl {
+
+  margin: {
+    top: 0;
+    bottom: 1.5rem;
+  };
+
+}
+
+dt {
+
+  margin-bottom: 1.5rem;
+
+  @at-root dd {
+
+    margin: {
+      left: 1.75rem;
+      bottom: 1.5rem;
+    };
+
+  }
+
+  + dd {
+
+    margin-top: -1.25rem;
+
+  }
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+*:last-child,
+*:only-child {
+
+  margin-bottom: 0;
+
+}

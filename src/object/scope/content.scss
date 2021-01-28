@@ -1,0 +1,24 @@
+.s-Content {
+
+  @each $headLevel, $fontSize in (
+
+    "1": 42,
+    "2": 35,
+    "3": 29,
+    "4": 24,
+    "5": 19,
+    "6": 16
+
+  ) {
+
+    h#{$headLevel} {
+
+      font: {
+        size: $fontSize / 16 + em;
+      };
+
+    }
+
+  }
+
+}

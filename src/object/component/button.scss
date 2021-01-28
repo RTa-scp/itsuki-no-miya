@@ -1,0 +1,44 @@
+.c-Button {
+
+  display: inline-flex;
+  margin: .25rem;
+  padding: {
+    top: .5em;
+    left: 1em;
+    right: 1em;
+    bottom: .5em;
+
+  };
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+
+}
+
+.c-Buttons {
+
+  display: flex;
+  margin: {
+    top: -.25rem;
+    left: -.25rem;
+    right: -.25rem;
+    bottom: 1.5 - .25 + rem;
+  };
+
+  @each $nameSpace, $position in (
+
+    "Left": flex-start,
+    "Center": center,
+    "Right": flex-end
+
+  ) {
+
+    &.is-#{$nameSpace} {
+
+      justify-content: $position;
+
+    }
+
+  }
+
+}

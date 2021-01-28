@@ -11,8 +11,8 @@
     "sass": "^1.32.0"
   },
   "scripts": {
-    "build": "parcel build src/mock.pug",
-    "test": "parcel src/mock.pug",
-    "watch": "parcel watch src/mock.pug"
+    "build": "parcel build src/index.pug",
+    "serve": "parcel serve src/index.pug",
+    "watch": "parcel watch src/index.pug"
   }
 }
