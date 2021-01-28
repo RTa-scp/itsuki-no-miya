@@ -1,0 +1,14 @@
+.l-Container {
+
+  margin: {
+    left: auto;
+    right: auto;
+  };
+
+  @include min-screen($min: 1204px) {
+
+    max-width: 1024px;
+
+  }
+
+}
