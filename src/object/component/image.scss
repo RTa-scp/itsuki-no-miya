@@ -1,0 +1,37 @@
+.c-Image {
+
+  object: {
+    position: 50% 50%;
+    fit: cover;
+  };
+
+  @each $nameSpace-x, $position-x in (
+
+    null: 50%,
+    "Left": 0,
+    "Center": 50%,
+    "Right": 100%
+
+  ) {
+
+    @each $nameSpace-y, $position-y in (
+
+      null: 50%,
+      "Top": 0,
+      "Middle": 50%,
+      "Bottom": 100%
+
+    ) {
+
+      &.is-#{$nameSpace-x}#{$nameSpace-y} {
+
+        object-position: $position-x $position-y;
+
+      }
+
+    }
+
+  }
+
+
+}
